@@ -11,21 +11,21 @@
     <header id="header">
       <div class="container">
         <nav class="navbar">
-            <a href="#">
-                <img src="./images/icons/Logo (3).svg" alt="Logo">
-            </a>
-            <div class="navbar_items">
-                <a href="#" class="navbar_items-link">Home</a>
-                <a href="#" class="navbar_items-link">Category</a>
-                <a href="#" class="navbar_items-link">About Us</a>
-                <a href="#" class="navbar_items-link">Register</a>
-                <a href="#" class="navbar_items-login">Login</a>
-            </div>
-            <div class="burger_menu" id="burger_menu">
-                <span class="burger_menu__top"></span>
-                <span class="burger_menu__center"></span>
-                <span class="burger_menu__bottom"></span>
-            </div>
+          <a href="#">
+            <img src="./images/icons/Logo (3).svg" alt="Logo" />
+          </a>
+          <div class="navbar_items">
+            <a href="#" class="navbar_items-link">Home</a>
+            <a href="#" class="navbar_items-link">Category</a>
+            <a href="#" class="navbar_items-link">About Us</a>
+            <a href="#" class="navbar_items-link">Register</a>
+            <a href="#" class="navbar_items-login">Login</a>
+          </div>
+          <div class="burger_menu" id="burger_menu">
+            <span class="burger_menu__top"></span>
+            <span class="burger_menu__center"></span>
+            <span class="burger_menu__bottom"></span>
+          </div>
         </nav>
       </div>
     </header>
@@ -33,45 +33,53 @@
       <section>
         <div class="container">
           <div class="register">
-            <form>
+            <form id="form">
               <h1>Register</h1>
-              <label>
-                <input type="text" placeholder="Firstname" required>
-              </label>
-              <label>
-                <input type="text" placeholder="Lastname" required>
-              </label>
-              <label>
-                <input type="password" placeholder="Password" required>
-              </label>
-              <label>
-                <input type="password" placeholder="Confirm password" required>
-              </label>
-              <a href="./pages/login.html">Register</a>
+              <input type="text" class="firstname" placeholder="Firstname" required />
+              <input type="text" class="lastname" placeholder="Lastname" required />
+              <input type="text" class="username" placeholder="Username" required />
+              <input type="password" class="password" placeholder="Password" required />
+              <input type="password" class="confirm" placeholder="Confirm password" required />
+              <button class="btn" id="btn_submit">Register</button>
             </form>
           </div>
         </div>
       </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="footer">
-                <div class="footer_left">
-                    <p>Finstreet 118 2561 Fintown</p>
-                    <p>Hello@finsweet.com  020 7993 2905</p>
-                </div>
-                <div class="footer_icons">
-                    <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer">
+          <div class="footer_left">
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>Hello@finsweet.com 020 7993 2905</p>
+          </div>
+          <div class="footer_icons">
+            <a href="https://www.facebook.com/"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://twitter.com/"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="./js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/redister.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -66,6 +66,20 @@
             }
         }
     }
+    .home{
+        &_two{
+            .latest{
+                .posts{
+                    .card{
+                        img{
+                            height: auto;
+                        }
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {

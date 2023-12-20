@@ -1,5 +1,5 @@
 .about{
-    padding: 120px 0 60px 0;
+    padding: 120px 0 10px 0;
     .text{
         padding: 84px;
         display: flex;
@@ -30,6 +30,68 @@
             p{
                 font-size: 16px;
                 color: #6D6E76;
+                line-height: 28px;
+            }
+        }
+    }
+    &_team{
+        padding: 80px 0;
+    }
+    .team{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+        gap: 40px;
+        &_img{
+            position: relative;
+            max-width: 624px;
+            height: 480px;
+            img{
+                width: 100%;
+            }
+            &_yellow{
+                position: absolute;
+                left: -50px;
+                top: 40%;
+                width: 100px;
+                height: 115px;
+                border-top-left-radius: 30px;
+                background-color: $btn-color;
+            }
+            &_purple{
+                position: absolute;
+                left: 140px;
+                width: 74px;
+                height: 74px;
+                bottom: -37px;
+                border-radius: 50%;
+                background-color: $span;
+            }
+        }
+        &_left{
+            display: flex;
+            max-width: 520px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            h2{
+                font-size: 36px;
+                color: $black-bg;
+                line-height: 40px;
+                font-family: $font;
+                letter-spacing: -1px;
+            }
+            h4{
+                font-size: 24px;
+                color: $black-bg;
+                line-height: 32px;
+                font-family: $font;
+            }
+            p{
+                font-size: 16px;
+                color: $black-bg;
                 line-height: 28px;
             }
         }

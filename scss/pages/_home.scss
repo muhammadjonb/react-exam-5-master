@@ -44,6 +44,131 @@
     }
     &_two{
         padding: 66px 0;
-        
+        .latest{
+            display: flex;
+            padding-bottom: 40px;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid #6d6e764d;
+            gap: 64px;
+            & >h2{
+                color: $black;
+                font-size: 36px;
+                line-height: 48px;
+                font-family: $font;
+                letter-spacing: -2px;
+            }
+            .posts{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 40px 32px;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    max-width: 405px;
+                    transition: 0.3s;
+                    overflow: hidden;
+                    height: 550px;
+                    gap: 16px;
+                    &:hover{
+                        box-shadow: 5px 5px 10px 1px #70707033;
+                        border-radius: 10px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 270px;
+                    }
+                    &>span{
+                        padding: 0 10px;
+                        color: $black-bg;
+                        font-size: 16px;
+                        line-height: 20px;
+                        span{
+                            color: $span;
+                        }
+                    }
+                    h2{
+                        padding: 0 10px;
+                        font-size: 28px;
+                        color: $black-bg;
+                        line-height: 40px;
+                        font-family: $font;
+                        letter-spacing: -1px;
+                    }
+                    p{
+                        opacity: .7;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        color: $black-bg;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    &_category{
+        padding-bottom: 60px;
+        .choose{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                font-size: 36px;
+                color: $black-bg;
+                line-height: 48px;
+                font-family: $font;
+                letter-spacing: -2px;
+                padding-bottom: 64px;
+            }
+            &_cards{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+            }
+            &_card{
+                width: 296px;
+                height: 240px;
+                padding: 32px;
+                background-color: $white;
+                transition: all 0.3s ease;
+                border: 1px solid #6d6e764d;
+                &:hover{
+                    background-color: $btn-color;
+                    border-color: transparent;
+                }
+                svg:first-child{
+                    background-color: $white;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 8px;
+                }
+                &:nth-child(2) > svg,
+                &:nth-child(3) > svg,
+                &:nth-child(4) > svg{
+                    padding: 12px;
+                    width: 48px;
+                    height: 48px;
+                }
+                h3{
+                    font-size: 28px;
+                    color: $black-bg;
+                    line-height: 40px;
+                    font-family: $font;
+                    margin: 16px 0 4px 0;
+                    letter-spacing: -1px;
+                }
+                p{
+                    opacity: 0.7;
+                    font-size: 16px;
+                    color: $black-bg;
+                    line-height: 28px;
+                }
+            }
+        }
     }
 }

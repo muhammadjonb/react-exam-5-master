@@ -20,31 +20,19 @@
             padding-bottom: 40px;
             letter-spacing: -2px;
         }
-        label{
+        input{
             width: 100%;
-            input{
-                width: 100%;
-                padding: 20px;
-                font-size: 18px;
-                line-height: 27px;
-                border-radius: 2px;
-                border: 1px solid rgba(109, 110, 118, 0.50);
-            }
+            padding: 20px;
+            font-size: 18px;
+            line-height: 27px;
+            border-radius: 2px;
+            border: 1px solid rgba(109, 110, 118, 0.50);
         }
-        a{
+        .btn{
             width: 100%;
             padding: 16px;
             font-size: 24px;
-            color: $black-bg;
-            font-weight: 700;
-            transition: 0.3s;
             line-height: 32px;
-            border-radius: 2px;
-            text-align: center;
-            background-color: $btn-color;
-            &:hover{
-                background-color: #8080801a;
-            }
         }
     }
 }

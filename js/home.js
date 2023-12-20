@@ -23,8 +23,8 @@ function displayTodos(todos){
         str +=`
             <a href="./post.html"  onclick="getPost(${todo.id})"  class="card">
               <img src="${todo.image}" alt="">
-              <span>${todo.author}</span>
-              <h1>${todo.title}</h1>
+              <span>By <span>John Doe</span> l Aug 23, 2021</span>
+              <h2>${todo.title}</h2>
               <p>${todo.description}</p>
             </a>
         `
