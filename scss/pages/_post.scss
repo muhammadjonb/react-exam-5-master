@@ -1,0 +1,45 @@
+.cards{
+    width: 100%;
+    .card{
+        img{
+            width: 100%;
+        }
+        &_text{
+            margin: 0 auto;
+            max-width: 840px;
+            padding-top: 48px;
+            h3{
+                color: $span;
+                font-size: 28px;
+                line-height: 40px;
+                font-family: $font;
+                letter-spacing: -1px;
+            }
+            span{
+                color: #6D6E76;
+                font-size: 16px;
+                line-height: 28px;
+            }
+            h1{
+                font-size: 48px;
+                color: $black-bg;
+                margin-top: 40px;
+                line-height: 64px;
+                font-family: $font;
+            }
+            h4{
+                font-size: 24px;
+                color: $black-bg;
+                line-height: 32px;
+                font-family: $font;
+                margin: 32px 0 36px 0;
+            }
+            p{
+                font-size: 16px;
+                color: #6D6E76;
+                line-height: 28px;
+                padding-top: 24px;
+            }
+        }
+    }
+}

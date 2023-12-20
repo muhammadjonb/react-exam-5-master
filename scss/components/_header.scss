@@ -1,0 +1,151 @@
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    background-color: $black-bg;
+    z-index: 10;
+}
+.navbar{
+    height: 80px;
+    transition: all 0.3s ease;
+    @include flex-items();
+    justify-content: space-between;
+    &_items{
+        @include flex-items();
+        height: 100%;
+        gap: 24px;
+        &-link{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: $white;
+            font-size: 16px;
+            line-height: 28px;
+            transition: all 0.3s ease;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 0;
+                left: auto;
+                top: 0;
+                height: 3px;
+                transition: all 0.3s ease;
+                background-color: $btn-color;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 0%;
+                height: 100%;
+                transition: all 0.3s ease;
+                background-color: #ffd0501a;
+            }
+            &:hover{
+                color: $btn-color;
+                &::before{
+                    width: 100%;
+                }
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+        &-login{
+            border: none;
+            font-size: 16px;
+            color: $black-bg;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 14px 48px;
+            transition: all 0.3s ease;
+            background-color: $white;
+            &:hover{
+                color: $white;
+                background-color: #ffffff1a;
+            }
+        }
+    }
+    .burger_menu{
+        display: none;
+    }
+}
+.navbar-shrink{
+    box-shadow: 0 0 15px 5px $black-bg;
+    .navbar{
+        height: 66px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        &_items{
+            position: absolute;
+            height: auto;
+            width: 200px;
+            top: 100%;
+            right: 0;
+            padding: 20px;
+            flex-direction: column;
+            transition: all 0.4s ease;
+            background-color: $black-bg;
+            transform: translateX(100%);
+            gap: 0;
+            &-link{
+                width: 100%;
+                padding: 10px 0;
+                 &::before{
+                    transition: all 0.1s ease;
+                }
+                &::after{
+                    transition: all 0.1s ease;
+                }
+            }
+            &-login{
+                width: 100%;
+            }
+        }
+        .burger_menu{
+            position: relative;
+            width: 28px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition: all 0.4s ease;
+            justify-content: space-around;
+            span{
+                width: 100%;
+                height: 3px;
+                border-radius: 5px;
+                background-color: $white;
+                transition: all 0.4s ease;
+            }
+        }   
+    }
+    .navbar_menu{
+        .navbar{
+            &_items{
+                transform: translate(0);
+            }
+            .burger_menu{
+                transform: rotate(-180deg);
+                span{
+                    position: absolute;
+                }
+                &__top{
+                    transform: rotate(-135deg);
+                }
+                &__center{
+                    transform: rotate(-135deg);
+                }
+                &__bottom{
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+}

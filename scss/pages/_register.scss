@@ -1,0 +1,50 @@
+.regis{
+    padding: 160px 0 70px 0;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+        h1{
+            font-size: 48px;
+            color: $black-bg;
+            line-height: 64px;
+            font-family: $font;
+            padding-bottom: 40px;
+            letter-spacing: -2px;
+        }
+        label{
+            width: 100%;
+            input{
+                width: 100%;
+                padding: 20px;
+                font-size: 18px;
+                line-height: 27px;
+                border-radius: 2px;
+                border: 1px solid rgba(109, 110, 118, 0.50);
+            }
+        }
+        a{
+            width: 100%;
+            padding: 16px;
+            font-size: 24px;
+            color: $black-bg;
+            font-weight: 700;
+            transition: 0.3s;
+            line-height: 32px;
+            border-radius: 2px;
+            text-align: center;
+            background-color: $btn-color;
+            &:hover{
+                background-color: #8080801a;
+            }
+        }
+    }
+}

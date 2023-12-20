@@ -1,0 +1,49 @@
+.home{
+    padding-top: 60px;
+    .hero_bg{
+        padding: 138px 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/hero.jpg);
+    }
+    .hero{
+        h4{
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $white;
+            span{
+                font-weight: 900;
+            }
+        }
+        h1{
+            font-size: 56px;
+            line-height: 64px;
+            max-width: 803px;
+            font-family: $font;
+            letter-spacing: -2px;
+            padding: 24px 0;
+            color: $white;
+        }
+        p{
+            color: $white;
+            font-size: 16px;
+            line-height: 28px;
+            max-width: 599px;
+            padding-bottom: 16px;
+            span{
+                color: $btn-color;
+            }
+        }
+        button{
+            margin-top: 32px;
+        }
+    }
+    &_two{
+        padding: 66px 0;
+        
+    }
+}

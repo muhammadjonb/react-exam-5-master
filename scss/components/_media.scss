@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px){
+    .navbar{
+        &_items{
+            position: absolute;
+            height: auto;
+            width: 200px;
+            top: 100%;
+            right: 0;
+            padding: 20px;
+            flex-direction: column;
+            transition: all 0.4s ease;
+            background-color: $black-bg;
+            transform: translateX(100%);
+            gap: 0;
+            &-link{
+                width: 100%;
+                padding: 10px 0;
+                 &::before{
+                    transition: all 0.1s ease;
+                }
+                &::after{
+                    transition: all 0.1s ease;
+                }
+            }
+            &-login{
+                width: 100%;
+            }
+        }
+        .burger_menu{
+            position: relative;
+            width: 28px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition: all 0.4s ease;
+            justify-content: space-around;
+            span{
+                width: 100%;
+                height: 3px;
+                border-radius: 5px;
+                background-color: $white;
+                transition: all 0.4s ease;
+            }
+        }   
+    }
+    .navbar_menu{
+        .navbar{
+            &_items{
+                transform: translate(0);
+            }
+            .burger_menu{
+                transform: rotate(-180deg);
+                span{
+                    position: absolute;
+                }
+                &__top{
+                    transform: rotate(-135deg);
+                }
+                &__center{
+                    transform: rotate(-135deg);
+                }
+                &__bottom{
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    // FOOTER /////////////////////////////////////////
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

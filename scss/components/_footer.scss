@@ -1,0 +1,37 @@
+footer{
+    background-color: $black-bg;
+    padding: 52px 0;
+}
+.footer{
+    @include flex-items;
+    justify-content: space-between;
+    &_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            opacity: 0.7;
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    &_icons{
+        @include flex-items;
+        gap: 24px;
+        a{
+            ion-icon{
+                width: 20px;
+                height: 20px;
+                opacity: 0.7;
+                color: $white;
+                transition: 0.2s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+

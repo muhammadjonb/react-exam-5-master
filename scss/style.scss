@@ -1,0 +1,17 @@
+@import './fonts';
+@import './variables';
+@import './global';
+@import './mixins';
+
+@import './components/header';
+@import './pages/register';
+@import './pages/login';
+@import './pages/home';
+@import './pages/category';
+@import './pages/all-posts';
+@import './pages/post';
+@import './pages/about';
+
+@import './components/footer';
+@import './components/buttons';
+@import './components/media';
