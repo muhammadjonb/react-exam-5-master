@@ -15,12 +15,3 @@ btnSubmit.addEventListener("click",function (e) {
         alert("Fill in the input data")
     }
 })
-
-btnLogin.addEventListener("click",function (e) {
-    e.preventDefault()
-    if(userName.value.length>0 && password.value.length>0){
-        window.location.href="./home.html"
-    }else{
-        alert("Fill in the input data")
-    }
-})
